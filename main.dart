@@ -112,7 +112,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text(
-              'Your number :',
+              'Your number is currently:',
             ),
             Text(
               '$_counter',
@@ -121,8 +121,8 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
-      floatingActionButton: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      // -> I did get assistance from Kolya
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           FloatingActionButton(
             onPressed: _incrementCounter,
@@ -135,6 +135,7 @@ class _MyHomePageState extends State<MyHomePage> {
             child: const Icon(Icons.remove),
           ),
         ],
+        // https://docs.flutter.dev/ui/layout/tutorial
       )
     );
   }
